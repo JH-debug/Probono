@@ -5,3 +5,4 @@
 - IBM Watson Assistant 기반
 - 백엔드(Flask) 및 데이터베이스(PostgreSQL) 담당 
 - 시연 영상: https://www.youtube.com/watch?v=8B3xE1ELDWI
+
