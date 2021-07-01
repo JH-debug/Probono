@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/profileImg"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/king"
+        android:scaleType="centerCrop"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:text="이남북"
+        app:layout_constraintStart_toEndOf="@+id/profileImg"
+        app:layout_constraintTop_toTopOf="@+id/profileImg" />
+
+
+    <TextView
+        android:id="@+id/timeline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1h"
+        android:layout_marginRight="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/name" />
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_delete_board"-->
+<!--        android:layout_width="30dp"-->
+<!--        android:layout_height="30dp"-->
+<!--        android:text="D"-->
+<!--        android:textSize="10sp"-->
+<!--        android:layout_marginRight="10dp"-->
+<!--        android:visibility="gone"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/profileImg"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/profileImg" />-->
+
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:text="질문"
+        app:layout_constraintTop_toBottomOf="@+id/profileImg" />
+
+
+    <ImageView
+        android:id="@+id/img_like"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginVertical="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/question"
+        app:layout_constraintTop_toBottomOf="@+id/question"
+        app:srcCompat="@drawable/ic_baseline_favorite_border_24" />
+
+    <TextView
+        android:id="@+id/favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintLeft_toRightOf="@+id/img_like"
+        app:layout_constraintTop_toTopOf="@+id/img_like"
+        android:textColor="@color/colorPrimary" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintLeft_toRightOf="@+id/favorite"
+        app:layout_constraintTop_toTopOf="@+id/favorite"
+        app:srcCompat="@drawable/ic_baseline_chat_24" />
+
+    <TextView
+        android:id="@+id/chatNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintLeft_toRightOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        android:textColor="@color/colorPrimary" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
